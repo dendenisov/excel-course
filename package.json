@@ -1,0 +1,24 @@
+{
+  "name": "excel-course",
+  "version": "1.0.0",
+  "description": "Pure JavaScript Excel App",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dendenisov/excel-course.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "excel"
+  ],
+  "author": "Denis Denisov <mrdenisov91@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dendenisov/excel-course/issues"
+  },
+  "homepage": "https://github.com/dendenisov/excel-course#readme"
+}
