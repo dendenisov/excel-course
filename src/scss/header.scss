@@ -11,9 +11,7 @@
     display: flex;
     justify-content: space-between;
 
-    background: #eee;
-
-    & .input {
+    .input {
         margin: 0;
         padding: 2px 7px;
         min-width: 1px;
