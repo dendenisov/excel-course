@@ -1,4 +1,4 @@
-import {DomListener} from './DomListener';
+import {DomListener} from '@core/DomListener'
 
 // import {DomListener} from '@core/DomListener'
 
