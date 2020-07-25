@@ -3,13 +3,13 @@ const CODES = {
   Z: 90,
 }
 
-function createCell() {
-  return `
-  <div class='cell' contentidable>A</div>
-  `
-}
+// function createCell() {
+//   return `
+//   <div class='cell' contentidable>A</div>
+//   `
+// }
 
-function createCol(col) {
+function toColumn(col) {
   return `
     <div class='column'>
     ${col}
@@ -26,16 +26,18 @@ function createRow(content) {
     `
 }
 
+function toChar(_, index) {
+  return String.fromCharCode(CODES.A + index)
+}
+
 export function createTable(rowsCount = 15) {
   const colsCount = CODES.Z-CODES.A + 1
   const rows = []
 
   const cols = new Array(colsCount)
       .fill('')
-      .map((el, index) => {
-        return String.fromCharCode(CODES.A + index)
-      })
-      .map(createCol)
+      .map(toChar)
+      .map(toColumn)
       .join('')
 
   rows.push(createRow(cols))
